@@ -8,6 +8,7 @@
   /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
   :root { 
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+     --getstartedcolor:#000000;
     --default-color: #223a66; /* Default color used for the majority of the text content across the entire website */
     /*--heading-color: #151515;*/ /* Color for headings, subheadings and title throughout the website */
     --heading-color: rgb(34, 58, 102); /* Color for headings, subheadings and title throughout the website */
@@ -177,8 +178,15 @@
     line-height: 1.2;
     letter-spacing: -1.2px;
     text-transform: capitalize;
-    color: #223a66;
+    color: #000000;
   } 
+  section {
+    color: var(--getstartedcolor);
+    background-color: var(--background-color);
+    padding: 20px 0;
+    scroll-margin-top: 72px;
+    overflow: clip;
+  }
   /*--------------------------------------------------------------
   # feature Section
   --------------------------------------------------------------*/
@@ -244,14 +252,14 @@
   }
   
   .btn-main {
-    background: #223a66;
+    background: #0d6efd;
     color: #fff;
-    border-color: #223a66;
+    border-color: #0d6efd;
   }
   
   .btn-main:hover {
-    background: #e12454;
-    border-color: #e12454;
+    background: #223a66;
+    border-color: #223a66;
     color: #fff;
   }
   
@@ -1287,11 +1295,3 @@
     margin-top: 5px;
     font-size: 13px;
   }
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
-  scroll-margin-top: 72px;
-  overflow: clip;
-}
